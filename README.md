@@ -1,4 +1,4 @@
-# 4bit TakeOut Clothing 
+# 4bit_takeoutclothing 
 
 This script is an example of what you can do with our 4bit_appearance exports. This system allows players to easily remove and restore clothing items with realistic animations.
 
