@@ -3,27 +3,13 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeoutjacket",
             export = "takeoutjacket",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "jackets",
+                    type = "drawable",
                     values = {
-                        {
-                            type = "drawable",
-                            category = "jackets",
-                            value = 15,
-                            texture = 0,
-                            collection = "",
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "drawable",
-                            category = "jackets",
-                            value = 11,
-                            texture = 0,
-                            collection = "",
-                        },
+                        drawable = 15,  -- Undershirt value for male
+                        texture = 0
                     }
                 }
             },
@@ -37,27 +23,13 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeoutshirt",
             export = "takeoutshirt",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "undershirts",
+                    type = "drawable",
                     values = {
-                        {
-                            type = "drawable",
-                            category = "undershirts",
-                            value = 15,
-                            texture = 0,
-                            collection = "",
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "drawable",
-                            category = "undershirts",
-                            value = 11,
-                            texture = 0,
-                            collection = "",
-                        },
+                        drawable = 15,  -- Naked torso value
+                        texture = 0
                     }
                 }
             },
@@ -71,27 +43,13 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeoutpants",
             export = "takeoutpants",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "legs",
+                    type = "drawable",
                     values = {
-                        {
-                            type = "drawable",
-                            category = "legs",
-                            value = 14,
-                            texture = 0,
-                            collection = "",
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "drawable",
-                            category = "legs",
-                            value = 15,
-                            texture = 0,
-                            collection = "",
-                        },
+                        drawable = 14,  -- Underwear value (may differ by gender)
+                        texture = 0
                     }
                 }
             },
@@ -105,27 +63,13 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeoutshoes",
             export = "takeoutshoes",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "shoes",
+                    type = "drawable",
                     values = {
-                        {
-                            type = "drawable",
-                            category = "shoes",
-                            value = 1,
-                            texture = 0,
-                            collection = "Male_Apt01",
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "drawable",
-                            category = "shoes",
-                            value = 1,
-                            texture = 0,
-                            collection = "Female_Apt01",
-                        },
+                        drawable = 34,  -- Barefoot value
+                        texture = 0
                     }
                 }
             },
@@ -139,27 +83,13 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeoutundershirt",
             export = "takeoutundershirt",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "undershirts",
+                    type = "drawable",
                     values = {
-                        {
-                            type = "drawable",
-                            category = "undershirts",
-                            value = 15,
-                            texture = 0,
-                            collection = "",
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "drawable",
-                            category = "undershirts",
-                            value = 15,
-                            texture = 0,
-                            collection = "",
-                        },
+                        drawable = 15,  -- Naked torso value
+                        texture = 0
                     }
                 }
             },
@@ -173,27 +103,13 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeouttie",
             export = "takeouttie",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "accessories",
+                    type = "drawable",
                     values = {
-                        {
-                            type = "drawable",
-                            category = "accessories",
-                            value = 0,
-                            texture = 0,
-                            collection = "",
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "drawable",
-                            category = "accessories",
-                            value = 0,
-                            texture = 0,
-                            collection = "",
-                        },
+                        drawable = 0,  -- No accessory
+                        texture = 0
                     }
                 }
             },
@@ -208,27 +124,13 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeouthat",
             export = "takeouthat",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "hat",
+                    type = "drawable",
                     values = {
-                        {
-                            type = "prop",
-                            category = "hats",
-                            value = -1,
-                            texture = 0,
-                            collection = "",
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "prop",
-                            category = "hats",
-                            value = -1,
-                            texture = 0,
-                            collection = "",
-                        },
+                        drawable = 0,  -- No hat
+                        texture = 0
                     }
                 }
             },
@@ -242,27 +144,13 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeoutglasses",
             export = "takeoutglasses",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "glasses",
+                    type = "drawable",
                     values = {
-                        {
-                            type = "prop",
-                            category = "glasses",
-                            value = -1,
-                            texture = 0,
-                            collection = "",
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "prop",
-                            category = "glasses",
-                            value = -1,
-                            texture = 0,
-                            collection = "",
-                        },
+                        drawable = 0,  -- No glasses
+                        texture = 0
                     }
                 }
             },
@@ -276,27 +164,13 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeoutears",
             export = "takeoutears",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "ears",
+                    type = "drawable",
                     values = {
-                        {
-                            type = "prop",
-                            category = "ears",
-                            value = -1,
-                            texture = 0,
-                            collection = "",
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "prop",
-                            category = "ears",
-                            value = -1,
-                            texture = 0,
-                            collection = "",
-                        },
+                        drawable = 0,  -- No earring
+                        texture = 0
                     }
                 }
             },
@@ -310,27 +184,13 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeoutwatch",
             export = "takeoutwatch",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "watches",
+                    type = "drawable",
                     values = {
-                        {
-                            type = "prop",
-                            category = "watches",
-                            value = -1,
-                            texture = 0,
-                            collection = "",
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "prop",
-                            category = "watches",
-                            value = -1,
-                            texture = 0,
-                            collection = "",
-                        },
+                        drawable = 0,  -- No watch
+                        texture = 0
                     }
                 }
             },
@@ -344,27 +204,13 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeoutbracelet",
             export = "takeoutbracelet",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "bracelets",
+                    type = "drawable",
                     values = {
-                        {
-                            type = "prop",
-                            category = "bracelets",
-                            value = -1,
-                            texture = 0,
-                            collection = "",
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "prop",
-                            category = "bracelets",
-                            value = -1,
-                            texture = 0,
-                            collection = "",
-                        },
+                        drawable = 0,  -- No bracelet
+                        texture = 0
                     }
                 }
             },
@@ -379,29 +225,15 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeoutaddonglasses",
             export = "takeoutaddonglasses",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "addonglasses",
+                    type = "object",
                     values = {
-                        {
-                            type = "object",
-                            category = "ADD-ON GLASSES MALE",
-                            value = 4,
-                            texture = 0,
-                            colorId = 0,
-                            opacity = 0,
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "object",
-                            category = "ADD-ON GLASSES FEMALE",
-                            value = 4,
-                            texture = 0,
-                            colorId = 0,
-                            opacity = 0,
-                        },
+                        index = 0,  -- No addon glasses
+                        texture = 0,
+                        colorId = 0,
+                        opacity = 1.0
                     }
                 }
             },
@@ -415,29 +247,15 @@ PublicSharedTakeOutClothingConfig = {
         {
             command = "takeoutaddonwrist",
             export = "takeoutaddonwrist",
-            models = {
-                ["mp_m_freemode_01"] = {
+            features = {
+                {
+                    id = "AddOn Right Wrist",
+                    type = "object",
                     values = {
-                        {
-                            type = "object",
-                            category = "AddOn Right Wrist",
-                            value = 4,
-                            texture = 0,
-                            colorId = 0,
-                            opacity = 0,
-                        },
-                    }
-                },
-                ["mp_f_freemode_01"] = {
-                    values = {
-                        {
-                            type = "object",
-                            category = "AddOn Right Wrist",
-                            value = 4,
-                            texture = 0,
-                            colorId = 0,
-                            opacity = 0,
-                        },
+                        index = 0,  -- No addon wrist
+                        texture = 0,
+                        colorId = 0,
+                        opacity = 1.0
                     }
                 }
             },
@@ -446,6 +264,68 @@ PublicSharedTakeOutClothingConfig = {
                 clip = "put_on",
                 flag = 1,
                 duration = 800,
+            }
+        },
+        
+        -- Additional takeout commands for common items
+        {
+            command = "takeoutmask",
+            export = "takeoutmask",
+            features = {
+                {
+                    id = "mask",
+                    type = "drawable",
+                    values = {
+                        drawable = 0,  -- No mask
+                        texture = 0
+                    }
+                }
+            },
+            animation = {
+                dict = "mp_masks@standard_car@ds@",
+                clip = "put_on_mask",
+                flag = 51,
+                duration = 1200,
+            }
+        },
+        {
+            command = "takeoutbag",
+            export = "takeoutbag",
+            features = {
+                {
+                    id = "bags",
+                    type = "drawable",
+                    values = {
+                        drawable = 0,  -- No bag
+                        texture = 0
+                    }
+                }
+            },
+            animation = {
+                dict = "clothingshirt",
+                clip = "try_shirt_positive_d",
+                flag = 51,
+                duration = 1200,
+            }
+        },
+        {
+            command = "takeoutvest",
+            export = "takeoutvest",
+            features = {
+                {
+                    id = "vests",
+                    type = "drawable",
+                    values = {
+                        drawable = 0,  -- No vest
+                        texture = 0
+                    }
+                }
+            },
+            animation = {
+                dict = "clothingshirt",
+                clip = "try_shirt_positive_d",
+                flag = 51,
+                duration = 1200,
             }
         },
     }
