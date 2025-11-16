@@ -127,15 +127,18 @@ end
 
 local function takeOut(data, commandName)
     if not data or not data.features or #data.features == 0 then
-        print("^1[TakeOut]^7 No features defined for command: " .. commandName)
+        print("No features defined for command: " .. commandName)
         return
     end
 
-
+    if exports["4bit_appearance"]:isMenuOpen() then
+        print("Menu is open")
+        return
+    end
+    
     if data.animation then
         playAnimation(data.animation)
     end
-
 
     local hasSavedFeatures = savedFeatures[commandName] ~= nil
 
@@ -166,18 +169,24 @@ for k, v in pairs(PublicSharedTakeOutClothingConfig.Actions) do
     end
 end
 
-
-AddEventHandler("onResourceStop", function(resource)
-    if resource == GetCurrentResourceName() then
-        for commandName, features in pairs(savedFeatures) do
-            for _, actionConfig in pairs(PublicSharedTakeOutClothingConfig.Actions) do
-                if actionConfig.command == commandName then
-                    for _, featureConfig in ipairs(actionConfig.features) do
-                        restoreFeature(commandName, featureConfig)
-                    end
-                    break
+local function restoreAllFeatures()
+    for commandName, features in pairs(savedFeatures) do
+        for _, actionConfig in pairs(PublicSharedTakeOutClothingConfig.Actions) do
+            if actionConfig.command == commandName then
+                for _, featureConfig in ipairs(actionConfig.features) do
+                    restoreFeature(commandName, featureConfig)
                 end
             end
         end
     end
+end 
+
+AddEventHandler("onResourceStop", function(resource)
+    if resource == GetCurrentResourceName() then
+        restoreAllFeatures()
+    end
+end)
+
+exports["4bit_appearance"]:addHook("onMenuOpen", function()
+    restoreAllFeatures()
 end)
